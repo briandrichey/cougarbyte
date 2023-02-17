@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/briandrichey/cougarbyte.git/static/css/main.073c9b0a.css",
+    "main.js": "/briandrichey/cougarbyte.git/static/js/main.a1d47950.js",
+    "static/js/787.432b9b77.chunk.js": "/briandrichey/cougarbyte.git/static/js/787.432b9b77.chunk.js",
+    "static/media/logo.svg": "/briandrichey/cougarbyte.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/briandrichey/cougarbyte.git/index.html",
+    "main.073c9b0a.css.map": "/briandrichey/cougarbyte.git/static/css/main.073c9b0a.css.map",
+    "main.a1d47950.js.map": "/briandrichey/cougarbyte.git/static/js/main.a1d47950.js.map",
+    "787.432b9b77.chunk.js.map": "/briandrichey/cougarbyte.git/static/js/787.432b9b77.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a1d47950.js"
+  ]
+}
