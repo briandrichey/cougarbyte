@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to the CougarByte Tennibot Project! 
+          Welcome to the CougarByte Tennibot Project!
         </p>
 
         <p>
