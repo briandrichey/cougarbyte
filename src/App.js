@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to the CougarByte Tennibot Project!
+          Welcome to the Blue Team Tennibot Project!
         </p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
