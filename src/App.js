@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ImageUploader from './ImageUploader';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <p>
           Welcome to the CougarByte Tennibot Project!
         </p>
-
+        <ImageUploader></ImageUploader>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
