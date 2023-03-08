@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 
 const ImageUploader = () => {
-  const [imageSrc, setImageSrc] = useState(null);
-  const [x, setX] = useState(null);
-  const [y, setY] = useState(null);
-  const [r, setR] = useState(null);
-  const [g, setG] = useState(null);
-  const [b, setB] = useState(null);
-  const [data, setData] = useState([]);
+  const [imageSrc, setImageSrc] = useState(null); // empty state variable for the image
+  const [x, setX] = useState(null); //empty state variable for the x axis value
+  const [y, setY] = useState(null); //empty state variable for the y axis value
+  const [r, setR] = useState(null); //empty state variable for the red pixel value
+  const [g, setG] = useState(null); //empty state variable for the green pixel value
+  const [b, setB] = useState(null); //empty state variable for the blue pixel value
+  const [data, setData] = useState([]); //empty state array variable for the click data to be stored and exported
+
+
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
@@ -85,7 +87,13 @@ const ImageUploader = () => {
             X: {x}, Y: {y}, RGB: ({r}, {g}, {b})
           </div>
           <div>
-      <button onClick={handleExportData}>Export Data</button>
+      
+      <div>
+        <ul>
+            
+        </ul>
+        </div>
+        <button onClick={handleExportData}>Export Data</button>
     </div>
         </div>
       )}
