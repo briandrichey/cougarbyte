@@ -1,13 +1,66 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+img {
+  padding: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin: 2px;
+  margin-bottom: 30px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+h2 {
+  margin-bottom: -5px;
+}
+
+#file-button {
+  padding-left: 150px;
+}
+#button {
+  color: transparent;
+}
+#del-icon {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#del-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#export-button {
+  border-radius: 25px;
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
 }

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { TiDeleteOutline } from "react-icons/ti";
+
 
 const ImageUploader = () => {
   const [imageSrc, setImageSrc] = useState(null); // empty state variable for the image
@@ -10,9 +12,8 @@ const ImageUploader = () => {
   const [data, setData] = useState([]); //empty state array variable for the click data to be stored and exported
 
 
-
   const handleImageUpload = (event) => {
-    const file = event.target.files[0];
+   const file = event.target.files[0];
     const reader = new FileReader();
 
     reader.onload = () => {
@@ -71,9 +72,17 @@ const ImageUploader = () => {
     linkElement.click();
   };
 
+  const handleDelete = (id) => {
+    const newData = data.filter(li => li.id !== id);
+    setData(newData);
+  }
+
   return (
     <div>
-      <input type="file" accept="image/jpeg" onChange={handleImageUpload} />
+      <div id="file-button">
+        <input id="button" type="file" accept="image/jpeg" onChange={handleImageUpload} />
+        <label for="button"></label>
+      </div>
       {imageSrc && (
         <div>
           <img
@@ -86,15 +95,35 @@ const ImageUploader = () => {
           <div>
             X: {x}, Y: {y}, RGB: ({r}, {g}, {b})
           </div>
-          <div>
-      
-      <div>
-        <ul>
+          <br/>
+          <div> 
+            <table>
+              <tr>
+               <th>
+                  x
+                </th>
+                <th>
+                  y
+                </th>
+                <th>
+                  RGB
+                </th>
+                </tr>
+            {data.map(data => (
+                <tr>
+                  <td>{data.x}</td>
+                  <td>{data.y}</td>
+                <td>{data.r}, {data.g}, {data.b}</td>
+                <td>
+                  <button id="del-button" onClick={() => handleDelete(data.id)}><TiDeleteOutline id="del-icon"/></button>
+                </td>
+                </tr>
+            ))} 
+            </table>
             
-        </ul>
-        </div>
-        <button onClick={handleExportData}>Export Data</button>
-    </div>
+
+        <button id="export-button" onClick={handleExportData}>Export Data</button>
+          </div>
         </div>
       )}
     </div>
